@@ -59,7 +59,8 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        background-color: black;}
+        background-color: black;
+        border: 2px solid blue;}
 
     .green {
         width: 45px;
@@ -72,25 +73,50 @@
         height: 45px;
         border-radius: 50%;
         background-color: pink;}
-
+    
+    .sim {
+        padding: 20px 30px;
+        border-radius: 10px;
+        border: 2px solid blue;}
+    
+    .GB {
+        border: 2px solid blue; 
+    }
     button{
         padding: 20px 30px;
         border-radius: 10px;}
 
-        .btn-acheter {
-  background-color: #4CAF50; /* Vert */
-  border: none;
+    .btn-acheter {
+  background-color:hsl(203, 94%, 51%); /* Vert */
   color: white;
-  padding: 15px 32px;
+  padding: 20px 50px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;   
+  font-size: 40px;
+  border-radius: 24px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  margin: 4px 2px;
-  cursor: pointer;   
+th, td {
+  text-align: left;
+  padding: 8px;
+}
 
-  border-radius: 12px;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+.caractéristique {
+    margin-right: 50%;
 }
       </style>
 </head>
@@ -133,11 +159,30 @@
         <button class="sim">Double SIM</button>
         <h3>Choisissez votre stockage</h3>
         <div class="stockage">
-            <button class="32GB">32GB</button>
+            <button class="GB">32GB</button>
             <button class="64GB">64GB</button>
         </div>
-        <button class="btn-acheter">Acheter</button>
+        <button class="btn-acheter">ACHETER</button>
       </div>
+    </div>
+    <div class="caract">
+    <div class="Caractéristique">
+        <h1>Caractéristique</h1>
+    </div>
+    <table>
+        <tr>
+          <th>Type de processeur</th>
+          <th>Processeur</th>
+          <th>Poids (g)</th>
+          <th>Caméra arrière - Résolution (Multiple)</th>
+        </tr>
+        <tr>
+          <td>Octa-Core</td>
+          <td>2.3GHz, 1.8GHz</td>
+          <td>192</td>
+          <td>50.0 MP + 2.0 MP</td>
+        </tr>
+      </table>
     </div>
 </body>
 </html>
