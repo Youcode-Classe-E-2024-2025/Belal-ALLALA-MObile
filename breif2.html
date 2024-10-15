@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page galaxy A04</title>
+    <style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-left: 5px;}
+
+    .icons i {
+        width: 10;
+        height: 10;}
+
+    .samsung, .galaxy {
+      font-family: Arial, sans-serif;}
+
+    .samsung {
+        font-weight:bolder;
+        font-size: 24px;}
+
+    .galaxy {
+        font-weight:bold;
+        font-size: 16px;
+        margin-left: 10px;}
+
+    .home {
+        height: 32px;
+        display: flex;
+        font-size: 24px;
+        background-color: #030303;}
+
+    .accueil, .caracteristique, .contact{
+        margin-right: 10px;
+        margin-left: 20px;
+        color: #fff;}
+
+    .home1   {
+        display: flex;}
+
+    .product-image {
+        width:auto 30%;}
+
+    @media (max-width: 768px) { 
+        .product-image {
+            width: 100%;}}
+
+    .colors {
+        display: flex;
+        justify-content: space-between;}       
+
+    .black {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: black;}
+
+    .green {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: green;}
+
+    .pink {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: pink;}
+
+    button{
+        padding: 20px 30px;
+        border-radius: 10px;}
+
+        .btn-acheter {
+  background-color: #4CAF50; /* Vert */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;   
+
+  margin: 4px 2px;
+  cursor: pointer;   
+
+  border-radius: 12px;
+}
+      </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="samsung">SAMSUNG</div>
+            <div class="galaxy">Galaxy A04</div>
+        </div>
+        <div class="icons">
+          <i class="search"><img src="Capture1.PNG" alt=""></i>
+          <i class="user"><img src="Capture2.PNG" alt=""></i>
+          <i class="bars"><img src="Capture16.PNG" alt=""></i>
+        </div>
+    </header>
+
+    <div class="home">
+        <div class="accueil">Accueil</div>
+        <div class="caracteristique">Caractéristique</div>
+        <div class="contact">Contact</div>
+    </div>
+
+    <div class="home1">
+            <img src="galaxy a04.webp" alt="Samsung galaxy A04" class="product-image" >
+        <div class="product-info">
+            <h2>Galaxy A04</h2>
+            <p>SM-A045FZKGAFC</p>
+            <ul>
+                <li>Appareil photo haute résolution 50 MP</li>
+                <li>Processeur plus rapide</li>
+                <li>Grande batterie de 5000 mAh</li>
+            </ul>
+            <h3>Choisissez votre Couleur</h3>
+            <div class="colors">
+            <div class="black"></div>
+            <div class="green"></div>
+            <div class="pink"></div>
+        </div>
+        <h3>Choisissez votre SIM</h3>
+        <button class="sim">Double SIM</button>
+        <h3>Choisissez votre stockage</h3>
+        <div class="stockage">
+            <button class="32GB">32GB</button>
+            <button class="64GB">64GB</button>
+        </div>
+        <button class="btn-acheter">Acheter</button>
+      </div>
+    </div>
+</body>
+</html>
