@@ -7,182 +7,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page galaxy A04</title>
-    <style>
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #fff;
-        margin-left: 5px;}
-
-    .icons i {
-        width: 10;
-        height: 10;}
-
-    .samsung, .galaxy {
-      font-family: Arial, sans-serif;}
-
-    .samsung {
-        font-weight:bolder;
-        font-size: 24px;}
-
-    .galaxy {
-        font-weight:bold;
-        font-size: 16px;
-        margin-left: 10px;}
-
-    .home {
-        height: 32px;
-        display: flex;
-        font-size: 24px;
-        background-color: #030303;}
-
-    .accueil, .caracteristique, .contact{
-        margin-right: 10px;
-        margin-left: 20px;
-        color: #fff;}
-
-    .home1   {
-        display: flex;}
-
-    .product-image {
-        width:auto 30%;}
-
-    @media (max-width: 768px) { 
-        .product-image {
-            width: 100%;}}
-
-    .colors {
-        display: flex;
-        justify-content: space-between;}       
-
-    .black {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: black;
-        border: 2px solid blue;}
-
-    .green {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: green;}
-
-    .pink {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: pink;}
-    
-    .sim {
-        padding: 20px 30px;
-        border-radius: 10px;
-        border: 2px solid blue;}
-    
-    .GB {
-        border: 2px solid blue; 
-    }
-    button{
-        padding: 20px 30px;
-        border-radius: 10px;}
-
-    .btn-acheter {
-  background-color:hsl(203, 94%, 51%); /* Vert */
-  color: white;
-  padding: 20px 50px;
-  text-align: center;
-  display: inline-block;
-  font-size: 40px;
-  border-radius: 24px;
-  margin-top: 10px;
-  margin-left: 20%;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-.caractéristique {
-    margin-right: 50%;
-}
-      </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <header>
-        <div class="logo">
-            <div class="samsung">SAMSUNG</div>
-            <div class="galaxy">Galaxy A04</div>
+
+        <div class="header1">
+            <div class="logo">
+                <div class="samsung">SAMSUNG</div>
+                <div class="galaxy">Galaxy A04</div>
+            </div>
+            <div class="icons">
+            <i class="search"><img src="img/Capture1.PNG" alt=""></i>
+            <i class="user"><img src="img/Capture2.PNG" alt=""></i>
+            <i class="bars"><img src="img/Capture16.PNG" alt=""></i>
+            </div>
         </div>
-        <div class="icons">
-          <i class="search"><img src="Capture1.PNG" alt=""></i>
-          <i class="user"><img src="Capture2.PNG" alt=""></i>
-          <i class="bars"><img src="Capture16.PNG" alt=""></i>
+
+        <div class="header2">
+            <div  class="accueil"><a href="#accueil">Accueil</a></div>
+            <div class="caracteristique"><a href="#caractteristique">Caractéristique</a></div>
+            <div class="contact"><a href="#contacct">Contact</a></div>
         </div>
+
     </header>
 
-    <div class="home">
-        <div class="accueil">Accueil</div>
-        <div class="caracteristique">Caractéristique</div>
-        <div class="contact">Contact</div>
-    </div>
 
-    <div class="home1">
-            <img src="galaxy a04.webp" alt="Samsung galaxy A04" class="product-image" >
-        <div class="product-info">
-            <h2>Galaxy A04</h2>
-            <p>SM-A045FZKGAFC</p>
-            <ul>
-                <li>Appareil photo haute résolution 50 MP</li>
-                <li>Processeur plus rapide</li>
-                <li>Grande batterie de 5000 mAh</li>
-            </ul>
-            <h3>Choisissez votre Couleur</h3>
-            <div class="colors">
-            <div class="black"></div>
-            <div class="green"></div>
-            <div class="pink"></div>
+        <section id="accueil" style="padding-top: 60px;">
+
+            <div class="section1">
+                <img src="img/galaxy a04.webp" alt="Samsung galaxy A04" class="product-image" >
+                <div class="product-info">
+                    <h2>Galaxy A04</h2>
+                    <p>SM-A045FZKGAFC</p>
+                    <ul>
+                        <li>Appareil photo haute résolution 50 MP</li>
+                        <li>Processeur plus rapide</li>
+                        <li>Grande batterie de 5000 mAh</li>
+                    </ul>
+                    <h3>Choisissez votre Couleur</h3>
+                    <div class="colors">
+                        <div class="black"></div>
+                        <div class="green"></div>
+                        <div class="pink"></div>
+                    </div>
+    
+                    <h3>Choisissez votre SIM</h3>
+                    <button class="sim">Double SIM</button>
+                    <h3>Choisissez votre stockage</h3>
+    
+                    <div class="stockage">
+                        <button class="GB">32GB</button>
+                        <button class="64GB">64GB</button>
+                    </div>
+    
+                    <button class="btn-acheter">ACHETER</button>
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="caractteristique" style="padding-top: 60px;">
+    
+            <div>
+                <h1 class="caract" >Caractéristique</h1> 
+                <div class="ULTT">
+                    <div class="li1">
+                        <strong class="strong1">Type de Processeur</strong>
+                        <span class="span1">Octa-Core</span>
+                    </div>
+                    <div class="li1">
+                        <strong class="strong1">Processeur</strong>
+                        <span class="span1">2.3GHz, 1.8GHz</span>
+                    </div>
+                    <div class="li1">
+                        <strong class="strong1">Poids (g)</strong>
+                        <span class="span1">192</span>
+                    </div>
+                    <div class="li1">
+                        <strong class="strong1">Caméra arrière - Résolution (Multiple)</strong>
+                        <span class="span1">50.0 MP + 2.0 MP</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="part">
+                <div class="part-element">
+                    <img src="img/ecrant.png" alt="ecrant">
+                    <p>Un plus grand écran :<br>plus d’espace pour jouer</p>
+                </div>
+                <div class="part-element">
+                    <img src="img/camera.png" alt="camera">
+                    <p>Un appareil photo 50 MP magistral pour capturer chaque détail</p>
+                </div>
+                <div class="part-element">
+                    <img src="img/batrie.png" alt="battery">
+                    <p>Puissance et autonomie</p>
+                </div>
+                <div class="part-element">
+                    <img src="img/memoire.png" alt="stockage">
+                    <p>Un stockage et une vitesse sur lesquels vous pouvez compter</p>
+                </div>
+            </div>
+    
+            <div class="info">
+            <div>
+                <h1>Un plus grand écran: plus d'espace pour jouer</h1>
+                <img src="img/img1.avif" alt="Une image">
+            </div>
+    
+            <div>
+                <h1>Look minimaliste, design de qualité</h1>
+                <p>Une symétrie à l'élégance éclatante. Le nouveau design Ambient Edge associe un magnifique bord incurvé à un panneau arrière brillant agréable en main. Disponible en noir, blanc, vert et cuivre.</p>
+                <img src="img/img2.avif" alt="Une image">
+            </div>
+    
+            <div>
+                <h1>Un appareil photo 50 MP magistral pour capturer chaque détail</h1>
+                <p>Immortalisez vos instants inoubliables dans tous leurs détails avec l'appareil photo principal 50 MP. Transformez votre galerie en un trésor de photos créatives.</p>
+                <img src="img/img3.webp" alt="Une image">
+            </div>
+    
+            <div>
+                <h1>Puissance et autonomie</h1>
+                <p>La batterie de 5 000 mAh (typique)¹ vous permet de continuer vos activités pendant des heures. En prime, la gestion de l'énergie par IA détecte et s'adapte à vos habitudes d'utilisation mobile pour une puissance durable.</p>
+                <img src="img/img4.webp" alt="Une image">
+            </div>
+            </div>
+    
+        </section>
+    
+        <section id="contacct" class="contactt" style="padding-top: 60px;">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><img class="icon1" src="img/17736.png"> Chicago, US</p>
+                    <p><img class="icon2" src="img/téléchargement.jfif"> Phone: +00 151515</p>
+                    <p><img class="icon3" src="img/mail.png"> Email: mail@mail.com</p>
+                </div>
+                <p class="ecriture">Swing by for a cup of <img  src="img/cafe.jpg"> , or leave me a note:</p>
+                <form class="contact-form">
+                    <div class="name">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        
+        </section>
+
+    <footer>
+        <div class="social-container">
+            <p>Restez À Jour?</p>
+            <div class="social-icons">
+                <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
+                <img src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="X">
+                <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="YouTube">
+                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn">
+            </div>
         </div>
-        <h3>Choisissez votre SIM</h3>
-        <button class="sim">Double SIM</button>
-        <h3>Choisissez votre stockage</h3>
-        <div class="stockage">
-            <button class="GB">32GB</button>
-            <button class="64GB">64GB</button>
-        </div>
-        <button class="btn-acheter">ACHETER</button>
-      </div>
-    </div>
-    <div class="caract">
-    <div class="Caractéristique">
-        <h1>Caractéristique</h1>
-    </div>
-    <table>
-        <tr>
-          <th>Type de processeur</th>
-          <th>Processeur</th>
-          <th>Poids (g)</th>
-          <th>Caméra arrière - Résolution (Multiple)</th>
-        </tr>
-        <tr>
-          <td>Octa-Core</td>
-          <td>2.3GHz, 1.8GHz</td>
-          <td>192</td>
-          <td>50.0 MP + 2.0 MP</td>
-        </tr>
-      </table>
-    </div>
+    </footer>
+
 </body>
+
 </html>

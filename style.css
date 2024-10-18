@@ -1,0 +1,313 @@
+/*----header------*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.icons i {
+    width: 10;
+    height: 10;
+}
+
+.samsung, .galaxy {
+  font-family: Arial, sans-serif;
+}
+
+.samsung {
+    font-weight:bolder;
+    font-size: 24px;
+}
+
+.galaxy {
+    font-weight:bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header2 {
+    display: flex;
+    text-align: left;
+    background-color: #030303;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.accueil, .caracteristique, .contact{
+    margin-right: 10px;
+    color: #fff;
+}
+
+/*----section1------*/
+.section1  {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.colors {
+    display: flex;
+    gap: 30px;
+}       
+
+.black, .green, .pink{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.black {
+    background-color: black;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.sim {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.btn-acheter {
+    background-color: aqua;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/*-----section2------*/
+.caract {
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ULTT {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, sans-serif;
+}
+
+.li1 {
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.strong1 {
+    display: block;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.span1 {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.part {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.part-element {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.part-element img {
+    width: 50px;
+    height: 50px;
+}
+
+.info {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.info h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.info p {
+    font-family: sans-serif;
+    padding: 0 20%;
+
+}
+
+.info img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*------section3--------*/
+.contactt h2 {
+    text-align: center;
+    font-family: Arial;
+}
+
+.contact-container {
+    width: 50%;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.contact-info {
+    width: 100%;
+    font-family: arial;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #444;
+    font-size: 18px;
+}
+
+.contact-info p img, .ecriture img{
+    width: 16px;
+    height: 18px;
+}
+
+.ecriture{
+    font-family: arial;
+    color: #444;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name input{
+    width: 50%;
+    margin: 2px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .name input, .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/*-----footer------*/
+.social-container {
+    text-align: center;
+    font-family: Arial;
+    margin: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+
+    .section1{
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .product-info{
+        text-align: left;
+    }
+    
+    .btn-acheter{
+        font-size: 32px;
+    }
+
+    .part-element {
+        flex: 1 1 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ULTT {
+    flex-direction: column ;
+ }
+
+.contact-container {
+    width: 80%;
+}
+.contact-info p, .contact-form .name input, .contact-form textarea, .ecriture{
+    font-size: 12px;
+}
+.social-icons{
+    width:80%
+}
+
+.header2{
+    font-size: 16px;
+}
+}
+
